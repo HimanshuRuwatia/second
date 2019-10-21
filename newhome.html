@@ -1,0 +1,129 @@
+<html>
+<head>
+<title></title>
+<style type="text/css">
+  body{
+       background-image:url(home3.jpg);
+       background-size:cover;
+       background-attachment:fixed;
+      }
+
+  .list{
+       display:flex;
+       position:absolute;
+	     margin-top: 50px;
+	     margin-left: 1320px;
+       border:1px solid white;
+       background-color: white;
+       border-radius: 15px;
+       background: linear-gradient(0deg,#000,#262626)
+      }
+    a
+    {
+      text-decoration: none;
+    }
+  .list : before
+  {
+    content: '';
+    position:absolute;
+    top:-2%;
+    left:-2%;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    width :calc(100% + 4px);
+    height :calc(100% + 4px);
+    z-index:-1;
+    animation: animate 20s linear infinite;
+  }
+    @keyframes animate {
+      0%{
+        background-position: 0 0;
+      }
+      50%{
+        background-position: 400% 0;
+      }
+      100%{
+        background-position: 0 0;
+      }
+
+    }
+     ul
+{
+
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+li
+{
+    color: blue;
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    border-radius: 25px;
+}
+li a
+{
+	font-size: 25px;
+  color:#e8e6e1;
+}
+li:hover
+{
+    border-radius:25px;
+    background: red;
+    cursor: pointer;
+}
+ul li ul
+{
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    border-radius: 25px;
+}
+ul li:hover > ul,
+ul li ul:hover
+{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<img src="logo2.png" width="80" height="80" style="margin-left:1370px;margin-top:70px;">
+
+  	<div class="list">
+  		<ul>
+        	<li><a href="index.html">  LOGIN  </font></a></li>
+  		    <li><a href="about.html">ABOUT</a>
+
+  		    </li>
+  		    <li><a href="#">CONTACT</a></li>
+
+  		    <li><a href="#">BLOGS</a>
+
+  			</li>
+  			<li><a href="#">REGISTER</a>
+  				<ul class="dropdown7">
+
+  					<li><a href="sign.html">SIGN UP</a></li>
+  			</li>
+  		 </ul>
+  	</div>
+</body>
+</html>

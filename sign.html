@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sign Up Form in HTML5 and CSS3</title>
+	<link rel="stylesheet" a href="css\style.css">
+	<link rel="stylesheet" a href="css\font-awesome.min.css">
+</head>
+<style>
+body{
+	margin: 0 auto;
+	background-image: url("s.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100% 720px;
+}
+.im{
+    border-radius:90%;
+}
+.container{
+	width: 500px;
+	height: 450px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(44, 62, 80,0.7);
+	margin-top: 160px;
+}
+ 
+.container img{
+	width: 150px;
+	height: 150px;
+	margin-top: -60px;
+}
+ 
+input[type="text"],input[type="password"],input[type="age"],input[type="height"],input[type="weight"]{
+	margin-top: 20px;
+	height: 30px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	background-color: #fff;
+	padding-left: 40px;
+}
+ 
+.form-input::before{
+	font-family: "FontAwesome";
+	padding-left: 07px;
+	padding-top: 40px;
+	position: absolute;
+	font-size: 35px;
+	color: #2980b9; 
+}
+ 
+.form-input:nth-child(2)::before{
+
+}
+ 
+.btn-login{
+	padding: 15px 25px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+}
+</style>
+<body>
+<div class="container">
+	<img class="im" src="limg.png"/>
+	<form method="post" action="s.php">
+		<div class="form-input">
+		    <input type="text" name="User" id="User" placeholder="Username"/>	
+		</div>
+		<div class="form-input">
+		    <input type="password" name="Pass" id="Pass" placeholder="Password"/>
+        </div>
+        <div class="form-input">
+            <input type="age" name="age" id="age" placeholder="Age"/>
+        </div>
+        <div class="form-input">
+            <input type="height" name="height" id="height" placeholder="Height"/>
+        </div>
+        <div class="form-input">
+            <input type="weight" name="weight" id="weight" placeholder="Weight"/>
+        </div>
+	<input type="submit" value="LOGIN" class="btn-login"/>
+	</form>
+</div>
+</body>
+</html>
